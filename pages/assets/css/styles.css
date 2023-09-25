@@ -1,0 +1,527 @@
+
+/* links */
+
+a {
+    text-decoration: none;
+}
+a.wbg {
+    color: #18d777;
+}
+a.wbg:hover {
+    color: #262833;
+}
+a.dbg {
+    color: rgba(255, 255, 255, .8);
+}
+a.dbg:hover {
+    color: #fff;
+}
+a.gbg {
+    color: #fff;
+}
+a.gbg:hover {
+    color: #262833;
+}
+.nav-tabs .nav-link {
+    color: #18d777;
+}
+.nav-tabs .nav-link:hover {
+    color: #262833;
+}
+
+/* general custom css */
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+div {
+    padding: 0px !important;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #262833;
+    --bs-btn-border-color: #262833;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #262833;
+    --bs-btn-hover-border-color: #262833;
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #262833;
+    --bs-btn-active-border-color: #262833;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #262833;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #262833;
+    --bs-gradient: none;
+}
+
+.btn-primary {
+    --bs-btn-color: #262833;
+    --bs-btn-bg: #18d777;
+    --bs-btn-border-color: #18d777;
+    --bs-btn-hover-color: #262833;
+    --bs-btn-hover-bg: #18d777;
+    --bs-btn-hover-border-color: #18d777;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #262833;
+    --bs-btn-active-bg: #18d777;
+    --bs-btn-active-border-color: #18d777;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #262833;
+    --bs-btn-disabled-bg: #18d777;
+    --bs-btn-disabled-border-color: #18d777;
+}
+
+button:hover {
+    transform: scale(103%);
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;    
+}
+
+section {
+    margin-top: 4em !important;
+}
+
+section h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+section.page-title {
+    background-image: url("../images/jacopo-maia--gOUx23DNks-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 300px;
+}
+
+.div-overlay-page-title {
+    background-color: rgba(0,0,0,.77);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.div-overlay-page-title h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.content-div h3 {
+    font-weight: 400;
+    letter-spacing: 9px;
+    font-style: italic;
+}
+
+section.mission-vision {    
+    background-image: url("../images/jacopo-maia--gOUx23DNks-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+section.mission-vision h2 {
+    color: #18d777;
+}
+
+section.mission-vision p {
+    color: #ffffff;
+    font-size: 1.7rem;
+}
+
+.div-overlay-mission-vision {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+/* my header section */
+
+header {
+    background-color: #f8f9fa;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.3)
+}
+
+.header-toolbar {
+    background-color: #262833;
+}
+
+.header-toolbar .list-group-item {
+    background-color: transparent;
+}
+
+.header-toolbar .list-group-item > a > i {
+    font-size: 14px;
+    color: #18d777;
+}
+
+.list-group-horizontal>.list-group-item:first-child:not(:last-child) {
+    border-width: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-horizontal>.list-group-item+.list-group-item {
+    border-width: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+h2.logo-name {
+    margin-bottom: 0px !important;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+h2.logo-name a {
+    color: #18d777;
+}
+
+p.logo-slogan {
+    margin-bottom: 0px !important;
+    margin-top: -9px;
+    margin-left: 2px;
+    color: #262833;
+    font-style: italic;
+    letter-spacing: 10px;
+}
+
+/* my hero carousel section */
+
+.div-overlay {
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.div-carousel-content {
+    width: 72%;
+    max-width: 1304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.carousel-item h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item p {
+    line-height: 1.7em;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    margin: 10px 0px 30px 0px;
+}
+
+.carousel-item h3 {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 25px;
+}
+
+
+/* my body sections */
+
+.who-r-we, .aim-to-be {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5em 2.5em !important;
+}
+
+.who-r-we p {
+    font-size: 2rem;
+}
+
+.who-r-we i {
+    font-size: 24px;
+    padding: 16px;
+    margin: 5px 7px;
+    border-radius: 50%;
+    background-color: #262833;
+    color: #fff;
+}
+
+.who-r-we button {
+    margin: 20px 0px !important;
+}
+
+.section-for-consumer {
+    background-color: #0b8500;
+    background-image: url("../images/xv.png");
+}
+
+.div-for-consumer h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.div-for-consumer h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 9px;
+    font-style: italic;
+}
+
+.p-details {
+padding: 10px;
+border-radius: 0px;
+background: #262833;
+color: #fff;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+
+.spec span {
+font-size: 13px;
+}
+
+.spec h6 {
+font-size: 16px;
+font-weight: 500;
+}
+
+.line {
+background-color: #fff;margin-top: 4px;margin-bottom: 4px;height: 0.2px;
+}
+
+.buy button {
+    width: 100%;
+}
+
+.img-container {
+    background-position: center center;
+    background-size: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.aim-to-be h3, .section-retailer h3 {
+    font-weight: 400;
+    letter-spacing: 9px;
+    font-style: italic;
+}
+
+.section-retailer h3, .section-retailer h2 {
+    text-align: center;
+}
+
+.section-for-producer {
+    background-image: url("../images/jacopo-maia--gOUx23DNks-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-for-producer .div-overlay {
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.counter-box {
+	display: block;
+	background: #f6f6f6;
+	padding: 40px 20px 37px;
+	text-align: center;
+}
+
+.s-suffix {
+    font-size: 1.7em;
+    vertical-align: bottom;
+}
+
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: #909090;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.counter-box i {
+    display: block;
+	font-size: 60px;
+	margin: 0 0 15px;
+	color: #18d777
+}
+
+.counter { 
+	display: inline-block;
+	font-size: 32px;
+	font-weight: 700;
+	color: #262833;
+	line-height: 28px
+}
+
+.counter-box.colored {
+      background: #18d777;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}
+
+.container-counter h3 {
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0;
+    font-size: 3em;
+    color: #18d777;
+    text-transform: uppercase;
+}
+
+h2 > b, h3 > b, .footer-bottom b {
+    color: #18d777;
+}
+
+
+/* my footer section  */
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.footer-top {
+    background-color: #18d777;
+}
+
+.footer-top h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #262833;
+}
+
+.footer-top p {
+    font-style: italic;
+    letter-spacing: 1.7px;
+}
+
+.footer-top input {
+    padding: 0.5em 1em;
+    width: -webkit-fill-available;
+    border-radius: 2px;
+    border: #efefef;
+    box-shadow: inset 0px 0px 5px rgb(0 0 0 / 60%);
+}
+
+.footer-top button {
+    min-width: 100px;
+}
+
+.newsletter-form {
+    margin-bottom: 1em;
+}
+
+.footer-bottom {
+    background-color: #262833;
+}
+
+footer h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #18d777;
+}
+
+.footer-info h3 {
+    font-weight: 400;
+    letter-spacing: 9px;
+    font-style: italic;
+    margin-top: -15px;
+}
+
+.footer-info i {
+    color: #18d777;
+}
+
+.footer-info i:hover {
+    color: #fff;
+    transition: all 500ms ease-in-out;
+}
+
+.socials i {
+    font-size: 32px;
+}
+
+.socials i:hover {
+    transform: scale(1.1);
+    transition: all 500ms ease-in-out;
+}
+
+/* carousel transition  */
+
+.slide {
+    transition-timing-function: ease-in-out !important;
+    transition-duration: 3s !important;
+}
+
+/* dropdown align right */
+.dropdown-menu-right {
+    right: 0 !important;
+    left: auto !important;
+}
+
+#dropBox, #dropBoxU {
+    border: 3px dashed #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    background-image: url('../images/imgplaceholder.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#dropBox, #dropBoxU {
+    aspect-ratio: 1;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#dropBox p{
+    text-align: center;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+#dropBoxU p{
+    text-align: center;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+#fileToUpload, #fileToUploadU {
+    display: none;
+}
+
+input, optgroup, select, textarea {
+    padding: 7px !important;
+}

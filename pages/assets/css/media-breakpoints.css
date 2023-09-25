@@ -1,0 +1,117 @@
+@media screen and (max-width: 992px) {
+    section {
+        margin-top: 3em !important;
+    }
+    .who-r-we h2, .aim-to-be h2, .section-for-consumer h2 {
+        font-size: 3rem;
+    }    
+    .who-r-we p {
+        font-size: 1.4rem;
+    }    
+    .who-r-we i {
+        font-size: 18px;
+        padding: 12px;
+        margin: 2px 5px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width:768px) {
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width:576px) {
+    .footer-info .col-lg-6 {
+        width: 100% !important;
+    }
+    .footer-info .pe-5 {
+        padding-right: 3rem !important;
+        padding: 1em !important;
+    }
+    .footer-info .quick-links {
+        text-align: left !important;
+    }
+    .footer-info .col-sm-3 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 1em 1em !important;
+    }
+    .section-for-retailer {
+        flex-direction: column-reverse;
+    }
+    .four {
+        max-width: 300px !important;
+    }
+    .footer-top, .footer-info {
+        text-align: center;
+    }
+    .div-overlay-page-title h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section h2 {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+    .logo-container {
+        width: 285px !important;
+    }
+    img.logo-img {
+        width: 60px !important;
+    }
+    h2.logo-name {
+        font-size: 36px !important;
+    }
+    p.logo-slogan {
+        font-size: 12px !important;
+        letter-spacing: 7px !important;
+        margin-top: -7px !important;
+        margin-left: 3px;
+    }
+    .container-counter h3 {
+        font-size: 2em;
+    }
+    .header-toolbar ul {
+        font-size: 12px !important;
+    }
+    .header-toolbar .list-group-horizontal {
+        justify-content: center !important;
+    }
+    .header-toolbar .justify-content-end {
+        justify-content: center !important;
+    }
+    .newsletter-form {
+        flex-direction: column !important;
+    }
+    .footer-top input {
+        margin-bottom: 0.5em;
+    }
+    .footer-top h3 {
+        font-size: 2.5rem;
+    }
+    footer h2 {
+        font-size: 3rem;
+    }
+    .footer-info .pe-5 {
+        padding: 1.5em !important;
+    }
+    .footer-info .text-end {
+        text-align: center !important;
+    }
+    .footer-bottom .justify-content-start {
+        justify-content: center !important;
+    }
+    .footer-bottom .justify-content-end {
+        justify-content: center !important;
+    }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../bootstrap-5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body id="body-pd">
+    <header class="header shadow-sm" id="header">
+        <div class="header_toggle"> <i class='fs-5 bi-list' id="header-toggle"></i> </div>
+        <div class="d-grid div-user" style="width:200px">
+            <div class="user_img"> <img id="user-photo" src="assets/images/emptyprof.jpg" alt=""> </div>
+            <span class="fw-bold" id="span_un">Username</span> <span class="fs-6 fst-italic" id="span_pos">Position</span> <span class="fs-6" id="span_access">Access</span>
+        </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> <a href="#" class="nav_logo"> <i class='fs-5 bi-shop nav_logo-icon'></i> <span class="nav_logo-name">Shop Online</span> </a>
+                <div class="nav_list">
+                    <a href="#" class="nav_link active"> <i class='fs-5 bi-speedometer2 nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
+                    <a href="#" class="nav_link"> <i class='fs-5 bi-person-circle nav_icon'></i> <span class="nav_name">Users</span> </a>
+                    <a href="#" class="nav_link"> <i class='fs-5 bi-grid nav_icon'></i> <span class="nav_name">Products</span> </a>
+                    <a href="#" class="nav_link"> <i class='fs-5 bi-people nav_icon'></i> <span class="nav_name">Customers</span> </a>
+                    <a href="#" class="nav_link"> <i class='fs-5 bi-receipt-cutoff nav_icon'></i> <span class="nav_name">Transactions</span> </a>
+                </div>
+            </div> 
+            <a href="#" class="nav_link"> <i class='fs-5 bi-box-arrow-left nav_icon'></i> <span class="nav_name">Logout</span> </a>
+        </nav>
+    </div>
+
+    <!--Container Main start-->
+    <div class="height-100 bg-white">
+        
+        <div class="row pt-4">
+
+            <div class="col-md-6 mb-4">
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-heading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1" aria-expanded="true" aria-controls="panelsStayOpen-collapse1">
+                            <i class='fs-5 bi-globe2 me-3'></i> Website Traffic
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse w-100 show" aria-labelledby="panelsStayOpen-heading1">
+                        <div class="accordion-body w-100">
+                            <div class="py-1">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <canvas id="chLine"></canvas>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="col-md-6 mb-4">
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <i class='fs-5 bi-graph-up me-3'></i>
+                          Sales Performance
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse w-100 show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body w-100">
+                            <div class="py-1">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <canvas id="chBar"></canvas>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-4">
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-heading2">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2" aria-expanded="true" aria-controls="panelsStayOpen-collapse2">
+                            <i class='fs-5 bi-grid me-3'></i>
+                          Product Inventory
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse w-100 show" aria-labelledby="panelsStayOpen-heading2">
+                        <div class="accordion-body w-100">
+
+                            <h4 class="text-center">TOP 3 PRODUCT</h4>
+                            <table class="table table-striped mb-3 shadow-sm">
+                                <thead class="bg-success text-light">
+                                    <tr>
+                                        <th>Product Name</th>
+                                        <th>Available Qty</th>
+                                        <th>Sold Qty</th>
+                                        <th>Sold Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Product 1</td>
+                                        <td>53</td>
+                                        <td>124</td>
+                                        <td>12400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Product 2</td>
+                                        <td>23</td>
+                                        <td>100</td>
+                                        <td>10000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Product 3</td>
+                                        <td>63</td>
+                                        <td>98</td>
+                                        <td>9800</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="col-md-6 mb-4">
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-heading3">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="true" aria-controls="panelsStayOpen-collapse3">
+                            <i class='fs-5 bi-people me-3'></i>
+                          Customers
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse w-100 show" aria-labelledby="panelsStayOpen-heading3">
+                        <div class="accordion-body w-100">
+
+                            <h5 class="text-center">TOP 3 ACTIVE CUSTOMER</h5>
+                            <table class="table table-striped mb-3 shadow-sm">
+                                <thead class="bg-success text-light">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Last bought</th>
+                                        <th>Total no. of products bought</th>
+                                        <th>Total amount of products bought</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Customer 1</td>
+                                        <td>04/10/2023</td>
+                                        <td>26</td>
+                                        <td>100000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Customer 2</td>
+                                        <td>04/10/2023</td>
+                                        <td>23</td>
+                                        <td>98000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Customer 3</td>
+                                        <td>04/11/2023</td>
+                                        <td>18</td>
+                                        <td>92000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h5 class="text-center">NEW CUSTOMERS</h5>
+                            <table class="table table-striped mb-3 shadow-sm">
+                                <thead class="bg-success text-light">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Registration Date</th>
+                                        <th>Total no. of products bought</th>
+                                        <th>Total amount of products bought</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Register 1</td>
+                                        <td>04/11/2023</td>
+                                        <td>6</td>
+                                        <td>8000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Register 2</td>
+                                        <td>04/10/2023</td>
+                                        <td>8</td>
+                                        <td>15000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Register 3</td>
+                                        <td>04/10/2023</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          
+                            
+                        </div>
+                      </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    <!--Container Main end-->
+    
+</body>
+</html>
+<script src="../bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.6.3.min.js"></script>
+<script src="assets/js/chart.js"></script>
+<script src="assets/js/use-chart.js"></script>
+<script src="assets/js/scripts.js"></script>

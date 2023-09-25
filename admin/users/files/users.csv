@@ -1,0 +1,9 @@
+ID,NAME,POSITION,USERNAME,EMAIL,ACCESS, STATUS
+"1","admin","administrator","admin","admin@gmail.com","lvl3","active"
+"5","auditor","teller","auditor","auditor@gmail.com","lvl1","active"
+"8","testing","administrator","admintest","admin2@gmail.com","lvl3","active"
+"9","Testing","administrator","admin2","fr2d.1lanes@gmail.com","lvl3","inactive"
+"11","newest add","supervisor","newuser","newuser@gmail.com","lvl2","active"
+"14","My Editor","supervisor","myeditor","fr3d.1lanes@gmail.com","lvl3","active"
+"15","Jonalyn","administrator","Jona","jonalyn.boaloy@gmail.com","lvl3","active"
+"16","asdasd","supervisor","asdasd","asd@gmail.com","lvl1","active"
