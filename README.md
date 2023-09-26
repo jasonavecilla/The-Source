@@ -7,7 +7,7 @@
   <h3 align="center">The Source</h3>
 
   <p align="center">
-    An Awesome ReadME Generator To Jumpstart Your Projects!
+     ReadME 
     <br/>
     <br/>
     <a href="https://github.com/jasonavecilla/https://github.com/jasonavecilla/jason-solo-proj"><strong>Explore the docs »</strong></a>
